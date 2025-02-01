@@ -1,0 +1,205 @@
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+    background:#181818;
+    display:grid;
+    place-items:center;
+    overflow:hidden;
+    
+
+}
+
+
+.container{
+    height:570px;
+    width:800px;
+    border-radius:12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.18);
+    background-color:#1f1e1e;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+} 
+
+.container > div:nth-child(1){
+    width:80%;
+    height:80%;
+    display:grid;
+    grid-template-rows:1fr 2fr 1fr;
+}
+
+.container  .title-logo{
+    text-align:center;
+    position:relative;
+}
+
+.logo{
+    position:absolute;
+    top:-27%;
+    left:50%;
+    transform:translateX(-50%)
+}
+
+.container  .title-logo .title-page h3{
+    color:white;
+    font-family:'Quicksand',sans-serif;
+    font-weight:1000;
+    font-size:25px;
+}
+.container  .title-logo .title-page p{
+    color:white;
+    font-family:'Anaheim';
+    font-weight:100;
+    opacity:0.8;
+    font-size:14px;
+}
+
+.form-wrapper {
+    display:flex;
+    flex-direction:column;
+    align-items:center
+}
+.form-wrapper > div{
+    margin:10px 0;
+}
+
+.form-wrapper > div input{
+    width:220px;
+    padding:10px 20px;
+    border:none;
+    border-radius:6px;
+    /* background:#030207; */
+    background:#181818;
+    border:1px solid rgba(255, 255, 255, 0.324);
+    outline:none;
+    color:white;
+    font-family:'Anaheim';
+}
+
+
+.form-wrapper .signUp-button{
+    padding-top:10px;
+    width:260px;
+}
+
+.form-wrapper .signUp-button button{
+    padding:8px 22px;
+    color:white;
+    font-family:'Roboto Slab';
+    font-weight:500;
+    background-color:#1DB954;
+    border:none;
+    width:100%;
+    cursor:pointer;
+    border-radius:4px;
+    position:relative;
+    overflow:hidden;
+
+}
+
+.form-wrapper .signUp-button button::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:-50%;
+    transform:translate(-50%,-50%);
+    background:url('../../assets/sendIcon.png') no-repeat;
+    background-size:contain;
+    height:20px;
+    width:20px;
+    transition:.5s ease-in-out;
+    z-index:1;
+}
+
+.form-wrapper .signUp-button button::after{
+    content:'';
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:-100%;
+    left:0;
+    background-color:#1DB954;
+    border-radius:4px;
+    transition:.3s ease-in-out;
+}
+
+.form-wrapper .signUp-button button:hover::before{
+    left:50%;
+}
+
+.form-wrapper .signUp-button button:hover::after{
+    top:0;
+}
+
+.or-div{
+    text-align:center;
+    width:220px;
+    position:relative;
+}
+
+.or-div span{
+    color:white;
+    font-family:'Anaheim',sans-serif;
+    opacity:0.8;
+}
+
+.or-div::before{
+    content:'';
+    position:absolute;
+    height:1px;
+    opacity:0.5;
+    width:100px;
+    background-color:rgba(255, 255, 255, 0.511);
+    left:-5%;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.or-div::after{
+    content:'';
+    position:absolute;
+    height:1px;
+    opacity:0.5;
+    width:100px;
+    background-color:rgba(255, 255, 255, 0.511);
+    right:-5%;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.buttons-wrapper{
+    text-align:center;
+}
+
+.buttons-wrapper > button{
+    margin:0 5px;
+}
+
+.buttons-wrapper > button{
+    padding:8px 20px;
+    color:white;
+    font-family:'Anaheim';
+    font-weight:500;
+    background-color:#181818;
+    border:1px solid rgba(255, 255, 255, 0.265);
+    cursor:pointer;
+    border-radius:2px;
+    cursor:pointer;
+    transition:.3s ease-in-out;
+}
+
+.buttons-wrapper > button:hover{
+    background-color:#1DB954;
+}
+
+#select{
+    padding:10px 22px;
+    cursor:pointer;
+    outline:none;
+    width:260px;
+    background-color:#1f1e1e;
+    color:white;
+    border-radius:6px;
+    font-family:'Roboto Slab';
+}
